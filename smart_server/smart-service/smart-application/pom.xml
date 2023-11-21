@@ -13,12 +13,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>common-application</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-application-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

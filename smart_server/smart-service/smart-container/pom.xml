@@ -16,22 +16,22 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-domain-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-application-service</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-dataaccess</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-application</artifactId>
             <version>${project.version}</version>
         </dependency>

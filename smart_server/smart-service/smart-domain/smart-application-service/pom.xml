@@ -13,12 +13,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>common-domain</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>ru.rvkovtunov.smart.server</groupId>
+            <groupId>ru.rkovtunov.smart.server</groupId>
             <artifactId>smart-domain-core</artifactId>
             <version>${project.version}</version>
         </dependency>
