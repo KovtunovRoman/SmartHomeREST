@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/smart_server/common/common-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/common/common-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-dataaccess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-domain/smart-application-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-domain/smart-domain-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/smart-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_dataaccess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_domain/smart_application_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/smart_domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/smart_service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/common/common-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/common/common-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-container/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-dataaccess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-domain/smart-application-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-domain/smart-domain-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/smart-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/smart-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart_system/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
