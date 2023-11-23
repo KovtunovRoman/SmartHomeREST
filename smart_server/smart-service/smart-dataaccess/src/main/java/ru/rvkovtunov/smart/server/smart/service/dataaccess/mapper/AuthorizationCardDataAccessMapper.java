@@ -16,7 +16,7 @@ public interface AuthorizationCardDataAccessMapper {
     AuthorizationCard toDomain (AuthorizationCardEntity entity);
 
     @Mapping(source = "domain.id", target = "id", qualifiedByName = "id")
-    AuthorizationCardEntity toDomain (AuthorizationCard domain);
+    AuthorizationCardEntity toEntity (AuthorizationCard domain);
 
     @Named("id")
     default AuthorizationCardId getId(UUID id){
