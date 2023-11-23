@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Table(name = "authorization_log", schema = "public")
 public class AuthorizationLogEntity extends BaseFields{
-/*
+    
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id")
     private AuthorizationCardEntity authorizationCardId;
@@ -22,5 +22,5 @@ public class AuthorizationLogEntity extends BaseFields{
     private LocalDateTime dateTime;
 
     @Column(name = "is_allowed")
-    private boolean allowed;*/
+    private boolean allowed;
 }
