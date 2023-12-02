@@ -16,7 +16,7 @@ public class AuthorizationCardController {
 
     @GetMapping("/listCards")
     public ResponseEntity<Object> getAllCards(){
-        log.info("Получаем все карты");
+        log.info("Получаем все карты из базы");
         final var response = service.getAll();
         return ResponseEntity.ok(response);
     }
