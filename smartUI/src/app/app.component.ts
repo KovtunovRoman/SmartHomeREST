@@ -1,14 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { DxButtonModule } from 'devextreme-angular';
+import {DxBoxModule, DxButtonModule, DxRangeSelectorModule} from 'devextreme-angular';
 import {SmartService} from "../service/SmartService";
-import {HttpClient} from "@angular/common/http";
+import {DxoBackgroundModule, DxoImageModule} from "devextreme-angular/ui/nested";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, DxButtonModule],
+  imports: [CommonModule, RouterOutlet, DxButtonModule, DxBoxModule, NgOptimizedImage, DxoBackgroundModule, DxoImageModule,
+  DxRangeSelectorModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,6 +22,7 @@ export class AppComponent implements OnInit{
 
   public helloWorld(){
     this.buttonBool = !this.buttonBool;
+    console.log("123")
     this.smartService.getBooleanFromButton(this.buttonBool).subscribe(value => {console.log(value)});
   }
 

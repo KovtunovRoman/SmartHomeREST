@@ -1,45 +1,54 @@
 {
-  "hash": "bf9d9cfa",
-  "browserHash": "76a68bb7",
+  "hash": "0ea2427e",
+  "browserHash": "a75de286",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "e97006bb",
-      "needsInterop": false
-    },
-    "@angular/core": {
-      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
-      "file": "@angular_core.js",
-      "fileHash": "de8bc06a",
-      "needsInterop": false
-    },
-    "@angular/platform-browser": {
-      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
-      "file": "@angular_platform-browser.js",
-      "fileHash": "d1025a1f",
-      "needsInterop": false
-    },
-    "@angular/router": {
-      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
-      "file": "@angular_router.js",
-      "fileHash": "5bc839d4",
-      "needsInterop": false
-    },
-    "devextreme-angular": {
-      "src": "../../../../../node_modules/devextreme-angular/fesm2015/devextreme-angular.js",
-      "file": "devextreme-angular.js",
-      "fileHash": "d5f7aec3",
+      "fileHash": "14c3e443",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "a6d1d5b7",
+      "fileHash": "f0c7e511",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "a2bf4bf6",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d34bbade",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "9cf054e9",
+      "needsInterop": false
+    },
+    "devextreme-angular": {
+      "src": "../../../../../node_modules/devextreme-angular/fesm2015/devextreme-angular.js",
+      "file": "devextreme-angular.js",
+      "fileHash": "a24d91e8",
+      "needsInterop": false
+    },
+    "devextreme-angular/ui/nested": {
+      "src": "../../../../../node_modules/devextreme-angular/fesm2015/devextreme-angular-ui-nested.js",
+      "file": "devextreme-angular_ui_nested.js",
+      "fileHash": "d2b46590",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-ZBX35JPJ": {
+      "file": "chunk-ZBX35JPJ.js"
+    },
     "chunk-AM4ZR24B": {
       "file": "chunk-AM4ZR24B.js"
     },
