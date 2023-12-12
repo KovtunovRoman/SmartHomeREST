@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   constructor(private smartService: SmartService) {
   }
 
-  public helloWorld(){
+  public helloWorld = () => {
     this.buttonBool = !this.buttonBool;
     console.log("123")
     this.smartService.getBooleanFromButton(this.buttonBool).subscribe(value => {console.log(value)});

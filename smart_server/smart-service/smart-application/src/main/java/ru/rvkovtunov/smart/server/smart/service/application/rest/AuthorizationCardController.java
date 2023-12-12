@@ -27,8 +27,7 @@ public class AuthorizationCardController {
 
     @GetMapping("/")
     public ResponseEntity<Object> getBoolFromButton(@RequestParam Boolean bool){
-        log.info("Получаем значение с кнопки");
-        System.out.println(bool);
+        socket.sendDataToMicroProcessor(bool.toString());
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 }
