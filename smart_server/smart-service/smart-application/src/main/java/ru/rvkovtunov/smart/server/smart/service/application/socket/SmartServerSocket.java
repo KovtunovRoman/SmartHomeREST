@@ -2,44 +2,51 @@ package ru.rvkovtunov.smart.server.smart.service.application.socket;
 
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
+import java.net.ServerSocket;
 import java.net.Socket;
 
 @Slf4j
 @RequiredArgsConstructor
 @Component
 @AllArgsConstructor
-public class SmartServerSocket{
+public class SmartServerSocket {
     private static Socket socket;
+    private static ServerSocket serverSocket;
     private static BufferedWriter writer;
-    private String m_ip;
     private int m_port;
     private boolean isStarted;
 
+    @SneakyThrows
+    public void startSocket(){
+        System.out.println(Thread.currentThread().getName());
+        setConnectionParams(4004);
+        prolog();
+        socket = serverSocket.accept();
+        start();
+    }
+
     @Async
     public void startSocketThread() {
-        setConnectionParams("localhost", 4004);
-        prolog();
-        start();
         loop();
         stop();
         epilog();
     }
 
-    public void start() {
+    private void start() {
         isStarted = true;
     }
 
-    public void stop() {
+    private void stop() {
         isStarted = false;
     }
 
-    public void setConnectionParams(String ip, int port) {
-        m_ip = ip;
+    private void setConnectionParams(int port) {
         m_port = port;
     }
 
@@ -53,9 +60,8 @@ public class SmartServerSocket{
         }
     }
 
-    public void readDataFromMicroProcessor() {
+    private void readDataFromMicroProcessor() {
         try {
-            socket.setSoTimeout(500);
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
@@ -73,25 +79,25 @@ public class SmartServerSocket{
     }
 
     private void prolog() {
-        connectToSocket(m_ip, m_port);
+        openSocket(m_port);
     }
 
     private void epilog() {
         try {
+            serverSocket.close();
             socket.close();
+            log.info("Сокет успешно закрыт");
         } catch (IOException e) {
             log.error("Ошибка закрытия сокета: {}", e);
         }
     }
 
-    private static Boolean connectToSocket(String ip, int port) {
+    private void openSocket(int port) {
         try {
-            socket = new Socket(ip, port);
-            log.info("Соединение установлено");
-            return true;
+            serverSocket = new ServerSocket(port);
+            log.info("Сокет запущен");
         } catch (IOException e) {
-            log.error("{}", e);
-            return false;
+            log.error("Ошибка запуска сокета: {}", e);
         }
     }
 }

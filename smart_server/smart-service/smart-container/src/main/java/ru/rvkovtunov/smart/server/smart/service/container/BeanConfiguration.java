@@ -20,7 +20,7 @@ public class BeanConfiguration implements AsyncConfigurer {
         executor.setCorePoolSize(4);
         executor.setMaxPoolSize(10);
         executor.setQueueCapacity(50);
-        executor.setThreadNamePrefix("AsyncTaskThread::");
+        executor.setThreadNamePrefix("SmartSocketThread::");
         executor.setWaitForTasksToCompleteOnShutdown(true);
         executor.initialize();
         return executor;
