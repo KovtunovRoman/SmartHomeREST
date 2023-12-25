@@ -17,3 +17,4 @@ public class SmartServiceApplication {
         context.getBean(RunSocket.class).startSocketServer();
     }
 }
+

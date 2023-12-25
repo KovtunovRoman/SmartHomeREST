@@ -5,13 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class StartServerSocket implements RunSocket{
+public class StartServerSocket implements RunSocket {
 
     private final SmartServerSocket serverSocket;
 
     @Override
-    public void startSocketServer(){
-        serverSocket.startSocket();
-        serverSocket.startSocketThread();
+    public void startSocketServer() {
+        serverSocket.startProgram();
     }
 }

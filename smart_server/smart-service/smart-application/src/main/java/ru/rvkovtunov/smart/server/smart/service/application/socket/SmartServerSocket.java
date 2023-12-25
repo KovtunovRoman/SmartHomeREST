@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -22,16 +24,20 @@ public class SmartServerSocket {
     private int m_port;
     private boolean isStarted;
 
-    @SneakyThrows
-    public void startSocket(){
-        System.out.println(Thread.currentThread().getName());
-        setConnectionParams(4004);
-        prolog();
-        socket = serverSocket.accept();
-        start();
+    private ExecutorService executor = Executors.newCachedThreadPool();
+
+    public void startProgram() {
+        CompletableFuture.runAsync(this::startSocket, executor).thenRunAsync(this::startSocketThread, executor);
     }
 
-    @Async
+    @SneakyThrows
+    public void startSocket() {
+        setConnectionParams(4004);
+        prolog();
+        start();
+        socket = serverSocket.accept();
+    }
+
     public void startSocketThread() {
         loop();
         stop();
@@ -51,13 +57,15 @@ public class SmartServerSocket {
     }
 
     public void sendDataToMicroProcessor(String message) {
-        try {
-            writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-            writer.write(message);
-            writer.flush();
-        } catch (IOException e) {
-            log.error("Ошибка записи в сокете: {}", e.getMessage());
-        }
+        CompletableFuture.runAsync(() -> {
+            try {
+                writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                writer.write(message);
+                writer.flush();
+            } catch (IOException e) {
+                log.error("Ошибка записи в сокете: {}", e.getMessage());
+            }
+        }, executor);
     }
 
     private void readDataFromMicroProcessor() {
